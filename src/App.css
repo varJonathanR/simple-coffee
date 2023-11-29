@@ -1,0 +1,143 @@
+/* Styles */
+
+.main {
+    margin: 10rem auto 1rem auto;
+    width: 80%;
+    height: auto;
+    flex-direction: column;
+    background-color: var(--dark);
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.about {
+    width: 50%;
+    flex-direction: column;
+    margin-top: 2rem;
+    background-image: url('./assets/vector.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+
+    & h1 {
+        font-size: 2rem;
+    }
+
+    & p {
+        text-align: center;
+    }
+}
+
+& .btn-container {
+    margin-top: 1rem;
+    gap: 1.5rem;
+}
+
+.collection-list {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+    & .coffee {
+        position: relative;
+        cursor: pointer;
+        transition: .5s ease all;
+        padding: 3px;
+        border-radius: 10px;
+
+        & .popular-tag {
+            position: absolute;
+            top: 8px;
+            left: 10px;
+            background-color: var(--yellow);
+            border-radius: 1000px;
+            padding: 2px 1rem;
+            color: var(--dark);
+            font-size: 12px;
+        }
+        
+        & img {
+            border-radius: 10px;
+        }
+
+        & p {
+            color: var(--light);
+            font-size: 14px;
+            margin: 2px 0;
+        }
+
+        & .principal-info, & .secondary-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 4px;
+        }
+
+        & .votes {
+            color: var(--gray);
+        }
+
+        & .price {
+            color: var(--dark);
+            background-color: var(--green);
+            border-radius: 4px;
+            padding: 4px;
+        }
+
+        & .available {
+            color: var(--orange);
+        }
+    }
+
+    & .coffee:hover {
+        background-color: var(--bg-color);
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .main {
+        margin-top: 5rem;
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+        background-color: var(--dark);
+        border-radius: 12px;
+        padding: 1rem;
+    }
+    
+    .collection-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main {
+        margin-top: 2rem;
+    }
+    .about {
+        width: 100%;
+    
+        & h1 {
+            font-size: 1.2rem;
+        }
+
+        & p {
+            font-size: 12px;
+        }
+    }
+    
+    .collection-list {
+        grid-template-columns: 1fr;
+        gap: .5rem;
+    
+        & .coffee {
+            & .popular-tag {
+                font-size: 10px;
+            }
+    
+            & p {
+                font-size: 12px;
+            }
+        }
+    }
+}
