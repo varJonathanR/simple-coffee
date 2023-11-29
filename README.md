@@ -2,7 +2,9 @@
 
 ## Overview
 
-![Simple Coffee Listing Preview]()
+![Simple Coffee Listing Preview](https://github.com/varJonathanR/simple-coffee/blob/main/public/simple-coffee_preview.png)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d55e9a11-205a-4ddb-a79a-e159aa7af865/deploy-status)](https://app.netlify.com/sites/simple-coffee-varjonathanr/deploys)
 
 [DEMO](https://simple-coffee-varjonathanr.netlify.app/) | [SOLUTION](https://devchallenges.io/solution/3731) | [REPO](https://github.com/varJonathanR/simple-coffee)
 
